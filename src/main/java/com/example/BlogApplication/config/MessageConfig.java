@@ -26,7 +26,7 @@ public class MessageConfig {
     @Value("${response.resource.post}")
     public String RESOURCE_POST;
     @Value("${response.resource.comment}")
-    public String RESOURCE_COOMMENT;
+    public String RESOURCE_COMMENT;
     @Value("${response.resource.field}")
     public String RESOURCE_FIELD;
 }

@@ -38,7 +38,7 @@ public class CommentServiceImpl implements CommentService{
     public void deleteComment(Integer commentId) {
         Comment comment = this.commentRepository.findById(commentId)
                 .orElseThrow(() -> new ResourceNotFoundException(this.messageConfig.RESOURCE_NOT_FOUND_MESSAGE_FORMAT,
-                        this.messageConfig.RESOURCE_COOMMENT, this.messageConfig.RESOURCE_FIELD, commentId));
+                        this.messageConfig.RESOURCE_COMMENT, this.messageConfig.RESOURCE_FIELD, commentId));
         this.commentRepository.delete(comment);
     }
 }
