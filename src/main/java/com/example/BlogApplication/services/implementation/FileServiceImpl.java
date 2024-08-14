@@ -1,5 +1,6 @@
-package com.example.BlogApplication.services;
+package com.example.BlogApplication.services.implementation;
 
+import com.example.BlogApplication.services.interfaces.FileService;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -9,7 +10,7 @@ import java.nio.file.Paths;
 import java.util.UUID;
 
 @Service
-public class FileServiceImpl implements FileService{
+public class FileServiceImpl implements FileService {
 
 
     @Override

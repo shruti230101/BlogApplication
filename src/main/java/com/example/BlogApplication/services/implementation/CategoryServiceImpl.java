@@ -1,10 +1,11 @@
-package com.example.BlogApplication.services;
+package com.example.BlogApplication.services.implementation;
 
 import com.example.BlogApplication.config.MessageConfig;
 import com.example.BlogApplication.dtos.CategoryDTO;
 import com.example.BlogApplication.entities.Category;
 import com.example.BlogApplication.exceptions.ResourceNotFoundException;
 import com.example.BlogApplication.repositories.CategoryRepository;
+import com.example.BlogApplication.services.interfaces.CategoryService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class CategoryServiceImpl implements CategoryService{
+public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
     private CategoryRepository categoryRepository;

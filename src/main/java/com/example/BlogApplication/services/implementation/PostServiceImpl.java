@@ -1,4 +1,4 @@
-package com.example.BlogApplication.services;
+package com.example.BlogApplication.services.implementation;
 
 import com.example.BlogApplication.config.MessageConfig;
 import com.example.BlogApplication.dtos.PostDTO;
@@ -10,6 +10,7 @@ import com.example.BlogApplication.payloads.PostResponse;
 import com.example.BlogApplication.repositories.CategoryRepository;
 import com.example.BlogApplication.repositories.PostRepository;
 import com.example.BlogApplication.repositories.UserRepository;
+import com.example.BlogApplication.services.interfaces.PostService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -22,7 +23,7 @@ import java.util.Date;
 import java.util.List;
 
 @Service
-public class PostServiceImpl implements PostService{
+public class PostServiceImpl implements PostService {
 
     @Autowired
     private PostRepository postRepository;

@@ -3,7 +3,7 @@ package com.example.BlogApplication.controllers;
 import com.example.BlogApplication.config.MessageConfig;
 import com.example.BlogApplication.dtos.CategoryDTO;
 import com.example.BlogApplication.payloads.APIResponse;
-import com.example.BlogApplication.services.CategoryService;
+import com.example.BlogApplication.services.interfaces.CategoryService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

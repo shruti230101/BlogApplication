@@ -1,4 +1,4 @@
-package com.example.BlogApplication.services;
+package com.example.BlogApplication.services.implementation;
 
 import com.example.BlogApplication.config.MessageConfig;
 import com.example.BlogApplication.dtos.CommentDTO;
@@ -7,12 +7,13 @@ import com.example.BlogApplication.entities.Posts;
 import com.example.BlogApplication.exceptions.ResourceNotFoundException;
 import com.example.BlogApplication.repositories.CommentRepository;
 import com.example.BlogApplication.repositories.PostRepository;
+import com.example.BlogApplication.services.interfaces.CommentService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CommentServiceImpl implements CommentService{
+public class CommentServiceImpl implements CommentService {
 
     @Autowired
     private PostRepository postRepository;

@@ -1,4 +1,4 @@
-package com.example.BlogApplication.services;
+package com.example.BlogApplication.services.interfaces;
 
 import com.example.BlogApplication.dtos.PostDTO;
 import com.example.BlogApplication.payloads.PostResponse;

@@ -1,4 +1,4 @@
-package com.example.BlogApplication.services;
+package com.example.BlogApplication.services.interfaces;
 
 import org.springframework.web.multipart.MultipartFile;
 

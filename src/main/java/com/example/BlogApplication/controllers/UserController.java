@@ -3,7 +3,7 @@ package com.example.BlogApplication.controllers;
 import com.example.BlogApplication.config.MessageConfig;
 import com.example.BlogApplication.dtos.UserDTO;
 import com.example.BlogApplication.payloads.APIResponse;
-import com.example.BlogApplication.services.UserService;
+import com.example.BlogApplication.services.interfaces.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

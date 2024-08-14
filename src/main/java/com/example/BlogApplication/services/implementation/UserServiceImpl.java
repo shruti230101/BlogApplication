@@ -1,10 +1,11 @@
-package com.example.BlogApplication.services;
+package com.example.BlogApplication.services.implementation;
 
 import com.example.BlogApplication.config.MessageConfig;
 import com.example.BlogApplication.dtos.UserDTO;
 import com.example.BlogApplication.entities.User;
 import com.example.BlogApplication.exceptions.ResourceNotFoundException;
 import com.example.BlogApplication.repositories.UserRepository;
+import com.example.BlogApplication.services.interfaces.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
